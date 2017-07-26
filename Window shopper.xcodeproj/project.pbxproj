@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FDAC3B061F27FB6B00E676C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC3B051F27FB6B00E676C7 /* AppDelegate.swift */; };
-		FDAC3B081F27FB6B00E676C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC3B071F27FB6B00E676C7 /* ViewController.swift */; };
+		FDAC3B081F27FB6B00E676C7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC3B071F27FB6B00E676C7 /* MainVC.swift */; };
 		FDAC3B0B1F27FB6C00E676C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC3B091F27FB6C00E676C7 /* Main.storyboard */; };
 		FDAC3B0D1F27FB6C00E676C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAC3B0C1F27FB6C00E676C7 /* Assets.xcassets */; };
 		FDAC3B101F27FB6C00E676C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAC3B0E1F27FB6C00E676C7 /* LaunchScreen.storyboard */; };
+		FDAC3B1B1F2802C800E676C7 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC3B1A1F2802C800E676C7 /* FancyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDAC3B021F27FB6B00E676C7 /* Window shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAC3B051F27FB6B00E676C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDAC3B071F27FB6B00E676C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDAC3B071F27FB6B00E676C7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FDAC3B0A1F27FB6C00E676C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDAC3B0C1F27FB6C00E676C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAC3B0F1F27FB6C00E676C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDAC3B111F27FB6C00E676C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAC3B1A1F2802C800E676C7 /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		FDAC3B041F27FB6B00E676C7 /* Window shopper */ = {
 			isa = PBXGroup;
 			children = (
+				FDAC3B191F27FD9400E676C7 /* Model */,
+				FDAC3B181F27FD8900E676C7 /* View */,
+				FDAC3B171F27FD7A00E676C7 /* Controller */,
 				FDAC3B051F27FB6B00E676C7 /* AppDelegate.swift */,
-				FDAC3B071F27FB6B00E676C7 /* ViewController.swift */,
 				FDAC3B091F27FB6C00E676C7 /* Main.storyboard */,
 				FDAC3B0C1F27FB6C00E676C7 /* Assets.xcassets */,
 				FDAC3B0E1F27FB6C00E676C7 /* LaunchScreen.storyboard */,
 				FDAC3B111F27FB6C00E676C7 /* Info.plist */,
 			);
 			path = "Window shopper";
+			sourceTree = "<group>";
+		};
+		FDAC3B171F27FD7A00E676C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC3B071F27FB6B00E676C7 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FDAC3B181F27FD8900E676C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC3B1A1F2802C800E676C7 /* FancyTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDAC3B191F27FD9400E676C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAC3B081F27FB6B00E676C7 /* ViewController.swift in Sources */,
+				FDAC3B1B1F2802C800E676C7 /* FancyTextField.swift in Sources */,
+				FDAC3B081F27FB6B00E676C7 /* MainVC.swift in Sources */,
 				FDAC3B061F27FB6B00E676C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
